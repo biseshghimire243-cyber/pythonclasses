@@ -1,0 +1,2 @@
+# create a table useing repel and create a table of 5 using it 
+# yesma hamile terminal ma gayera repel use garera that is python type garesi >>>> yesto aaayuxha aani 5*1 and feri 5*2 aani feroi yesari nei garneeeee sapei..
