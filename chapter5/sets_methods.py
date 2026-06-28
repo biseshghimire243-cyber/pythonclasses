@@ -3,3 +3,4 @@ print(s,type(s))
  #methods of sets
 s.add(255)
 print(s,type(s))
+s.remove(1)
