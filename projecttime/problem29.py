@@ -1,11 +1,10 @@
 try:
-    a = int(input("Enter first number: "))
-    b = int(input("Enter second number: "))
+    username = input("Enter username: ")
 
-    print("Answer =", a / b)
+    if len(username) < 5:
+        raise Exception("Username must contain at least 5 characters.")
 
-except ZeroDivisionError:
-    print("Division by zero is not allowed.")
+    print("Username:", username)
 
-finally:
-    print("Program Ended.")
+except Exception as e:
+    print(e)

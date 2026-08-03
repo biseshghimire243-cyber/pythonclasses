@@ -1,10 +1,10 @@
 try:
-    number = int(input("Enter a number: "))
+    salary = float(input("Enter salary: "))
 
-    if number < 0:
-        raise Exception("Square root of a negative number is not allowed.")
+    if salary < 0:
+        raise Exception("Salary cannot be negative.")
 
-    print("Square =", number ** 0.5)
+    print("Salary:", salary)
 
 except Exception as e:
     print(e)

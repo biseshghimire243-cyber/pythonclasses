@@ -1,10 +1,10 @@
 try:
-    email = input("Enter email: ")
+    phone = input("Enter phone number: ")
 
-    if "@" not in email:
-        raise Exception("Invalid email address.")
+    if len(phone) != 10:
+        raise Exception("Phone number must contain 10 digits.")
 
-    print("Email Accepted")
+    print("Phone Number:", phone)
 
 except Exception as e:
     print(e)

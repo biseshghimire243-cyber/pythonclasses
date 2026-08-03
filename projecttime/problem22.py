@@ -1,8 +1,10 @@
 try:
-    value = input("Enter a number: ")
-    number = int(value)
+    day = int(input("Enter day: "))
 
-    print("Integer Value:", number)
+    if day < 1 or day > 31:
+        raise Exception("Invalid day.")
 
-except ValueError:
-    print("Conversion failed.")
+    print("Day:", day)
+
+except Exception as e:
+    print(e)

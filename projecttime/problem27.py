@@ -1,12 +1,10 @@
 try:
-    fruits = ["Apple", "Banana", "Mango"]
+    pin = input("Enter 4-digit PIN: ")
 
-    fruit = input("Enter fruit name: ")
+    if len(pin) != 4 or not pin.isdigit():
+        raise Exception("Invalid PIN.")
 
-    if fruit not in fruits:
-        raise Exception("Fruit not found.")
-
-    print(fruit, "is available.")
+    print("PIN Accepted")
 
 except Exception as e:
     print(e)

@@ -1,10 +1,10 @@
 try:
-    username = input("Enter username: ")
+    price = float(input("Enter product price: "))
 
-    if username == "":
-        raise Exception("Username cannot be empty.")
+    if price <= 0:
+        raise Exception("Price must be greater than zero.")
 
-    print("Welcome,", username)
+    print("Price:", price)
 
 except Exception as e:
     print(e)

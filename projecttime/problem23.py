@@ -1,11 +1,10 @@
 try:
-    a = int(input("Enter first number: "))
-    b = int(input("Enter second number: "))
+    year = int(input("Enter year: "))
 
-    if a > b:
-        print("Largest =", a)
-    else:
-        print("Largest =", b)
+    if year < 1900 or year > 2100:
+        raise Exception("Invalid year.")
 
-except ValueError:
-    print("Please enter valid integers.")
+    print("Year:", year)
+
+except Exception as e:
+    print(e)

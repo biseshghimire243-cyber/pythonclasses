@@ -1,10 +1,10 @@
 try:
-    number = int(input("Enter a positive integer: "))
+    month = int(input("Enter month (1-12): "))
 
-    if number <= 0:
-        raise Exception("Number must be greater than zero.")
+    if month < 1 or month > 12:
+        raise ValueError("Invalid month.")
 
-    print("Valid Number:", number)
+    print("Month:", month)
 
-except Exception as e:
+except ValueError as e:
     print(e)

@@ -1,10 +1,10 @@
 try:
-    roll = int(input("Enter roll number: "))
+    score = int(input("Enter exam score: "))
 
-    if roll <= 0:
-        raise Exception("Roll number must be positive.")
+    if score < 0 or score > 100:
+        raise Exception("Invalid exam score.")
 
-    print("Roll Number:", roll)
+    print("Score:", score)
 
 except Exception as e:
     print(e)
