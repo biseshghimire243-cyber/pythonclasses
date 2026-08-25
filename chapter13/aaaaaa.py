@@ -24,9 +24,3 @@ elif player in choices:
 
 else:
     print("Invalid choice")
-
-
-
-
-
-    
